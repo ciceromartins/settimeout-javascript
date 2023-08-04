@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Título da minha página</h1>
+    <p id="meuParagrafo">
+      Um texto qualquer que será alterado após um tempo...
+    </p>
+
+    <script>
+      setTimeout(alterarParagrafo, 5000);
+
+      function alterarParagrafo() {
+        var element = document.getElementById("meuParagrafo");
+
+        element.innerHTML =
+          "Oi, eu sou um novo texto e <strong>executei após 5 segundos</strong>!";
+        element.style = "background-color: #F00";
+      }
+    </script>
+  </body>
+</html>
